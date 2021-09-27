@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    private bool inventoryEnable;
+    public bool inventoryEnable;
     public GameObject inventory;
 
     private int allSlots;

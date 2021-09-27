@@ -52,9 +52,11 @@ public class Item : MonoBehaviour
 
     public void ItemUsage()
     {
+        Debug.Log("Item Usage Activate");
         //weapon/health/whatever
         if(type == "Weapon")
         {
+            Debug.Log("Weapon is Active");
             weapon.SetActive(true);
             weapon.GetComponent<Item>().equipped = true;
         }

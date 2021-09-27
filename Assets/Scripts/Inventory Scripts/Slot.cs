@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class Slot : MonoBehaviour, IPointerClickHandler
+public class Slot : MonoBehaviour, IPointerClickHandler, IPointerDownHandler, IPointerUpHandler
 {
     public GameObject item;
     public int ID;
@@ -15,8 +15,17 @@ public class Slot : MonoBehaviour, IPointerClickHandler
 
     public Transform slotIconGO;
 
+    public void OnPointerDown(PointerEventData eventData)
+    {
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+    }
+
     public void OnPointerClick(PointerEventData pointerEventData)
     {
+        Debug.Log("On Pointer Click");
         UseItem();
     }
 
