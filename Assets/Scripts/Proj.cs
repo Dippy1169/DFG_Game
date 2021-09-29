@@ -32,6 +32,7 @@ public class Proj : MonoBehaviour
         else
         {
             EnemyHealth health = col.gameObject.GetComponent<EnemyHealth>();
+            Debug.Log("Player Proj Collision with " + col);
 
             if (health != null)
             {
