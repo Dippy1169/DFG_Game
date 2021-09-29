@@ -5,17 +5,7 @@ using UnityEngine;
 public class PlayerInventory : MonoBehaviour
 {
     public InventoryObject inventory;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void OnTriggerEnter(Collider other)
     {
@@ -26,6 +16,19 @@ public class PlayerInventory : MonoBehaviour
             Debug.Log("Adding item" + item);
             inventory.AddItem(item.item, 1);
             Destroy(other.gameObject);
+        }
+    }
+
+    private void Update() 
+    {
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            Debug.Log("Saving");
+            inventory.Save();
+        }if (Input.GetKeyDown(KeyCode.P))
+        {
+            Debug.Log("Loading");
+            inventory.Load();
         }
     }
 
