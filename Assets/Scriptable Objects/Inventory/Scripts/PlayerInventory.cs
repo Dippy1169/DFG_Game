@@ -5,35 +5,32 @@ using UnityEngine;
 public class PlayerInventory : MonoBehaviour
 {
     public InventoryObject inventory;
-
+    // Start is called before the first frame update
 
     public void OnTriggerEnter(Collider other)
     {
-        
-        var item = other.GetComponent<TestItem>();
+        var item = other.GetComponent<GroundItem>();
         if (item)
         {
-            Debug.Log("Adding item" + item);
-            inventory.AddItem(item.item, 1);
+            Item _item = new Item(item.item);
+            Debug.Log(_item.Id);
+            inventory.AddItem(_item, 1);
             Destroy(other.gameObject);
         }
     }
-
-    private void Update() 
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.O))
         {
-            Debug.Log("Saving");
             inventory.Save();
-        }if (Input.GetKeyDown(KeyCode.P))
+        }
+        if (Input.GetKeyDown(KeyCode.P))
         {
-            Debug.Log("Loading");
             inventory.Load();
         }
     }
-
     private void OnApplicationQuit()
     {
-        inventory.Container.Clear();
+        inventory.Container.Items = new InventorySlot[28];
     }
 }

@@ -8,7 +8,7 @@ using UnityEngine;
 public class WeaponObject : ItemObject
 {
 
-    public float damage;
+    //public float damage;
 
     public void Awake()
     {
