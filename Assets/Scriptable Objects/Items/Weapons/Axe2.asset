@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ce980ea336651741952b397939fec29, type: 3}
   m_Name: Axe2
   m_EditorClassIdentifier: 
-  Id: 0
-  uiDisplay: {fileID: 0}
+  Id: 6
+  uiDisplay: {fileID: 21300000, guid: f79074e16e670c84ba279f50e0981dd3, type: 3}
   type: 1
-  description: 
+  description: axe
   buffs: []
-  damage: 0

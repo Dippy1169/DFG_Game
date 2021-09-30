@@ -12,9 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ce980ea336651741952b397939fec29, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  prefab: {fileID: 4827494838785160586, guid: 37e85012cde52574cbe9d040e6845007, type: 3}
-  type: 0
-  descirption: 'A weapon
-
-'
-  damage: 15
+  Id: 0
+  uiDisplay: {fileID: 0}
+  type: 1
+  description: 
+  buffs: []
