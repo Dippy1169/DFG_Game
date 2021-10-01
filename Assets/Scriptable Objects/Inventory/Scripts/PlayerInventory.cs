@@ -13,7 +13,7 @@ public class PlayerInventory : MonoBehaviour
         if (item)
         {
             Item _item = new Item(item.item);
-            Debug.Log(_item.Id);
+            //Debug.Log(_item.Id);
             inventory.AddItem(_item, 1);
             Destroy(other.gameObject);
         }

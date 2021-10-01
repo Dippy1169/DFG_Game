@@ -4,8 +4,11 @@ using UnityEngine;
 
 public enum ItemType
 {
+    Food,
     Potion,
     Weapon,
+    Equipment,
+    Test,
     Default
 }
 

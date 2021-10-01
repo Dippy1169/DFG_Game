@@ -50,6 +50,8 @@ public class DisplayInventory : MonoBehaviour
     {
         foreach (KeyValuePair<GameObject, InventorySlot> _slot in itemsDisplayed)
         {
+            Debug.Log("Slot: " + _slot);
+            Debug.Log("inv dat getitem " + inventory.database.GetItem[_slot.Value.item.Id]);
             if (_slot.Value.ID >= 0)
             {
                 _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().sprite = inventory.database.GetItem[_slot.Value.item.Id].uiDisplay;
@@ -70,7 +72,7 @@ public class DisplayInventory : MonoBehaviour
         var eventTrigger = new EventTrigger.Entry();
         eventTrigger.eventID = type;
         eventTrigger.callback.AddListener(action);
-        trigger.triggers.Add(eventTrigger);
+        //trigger.triggers.Add(eventTrigger);
     }
 
     public void OnEnter(GameObject obj)
