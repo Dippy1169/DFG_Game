@@ -584,6 +584,7 @@ PlayerSettings:
     1: CROSS_PLATFORM_INPUT;STARTER_ASSETS_PACKAGES_CHECKED
     4: CROSS_PLATFORM_INPUT
     7: CROSS_PLATFORM_INPUT
+    13: STARTER_ASSETS_PACKAGES_CHECKED
     14: 
   additionalCompilerArguments: {}
   platformArchitecture: {}

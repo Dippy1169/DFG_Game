@@ -13,7 +13,7 @@ public class PlayerInventory : MonoBehaviour
         if (item)
         {
             Item _item = new Item(item.item);
-            Debug.Log("Player Inventory" + _item.Id);
+            //Debug.Log("Player Inventory" + _item.Id);
             inventory.AddItem(_item, 1);
             Destroy(other.gameObject);
         }
@@ -22,10 +22,12 @@ public class PlayerInventory : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.O))
         {
+            Debug.Log("Save Invenotry");
             inventory.Save();
         }
         if (Input.GetKeyDown(KeyCode.P))
         {
+            Debug.Log("Load Invenotry");
             inventory.Load();
         }
     }
