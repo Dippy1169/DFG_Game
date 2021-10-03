@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60cf9ade7c7cd83428f757774e4f9229, type: 3}
   m_Name: HealthPotion
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
-  type: 2
-  descirption: Heals the player
+  Id: 22
+  uiDisplay: {fileID: 0}
+  type: 1
+  description: 
+  buffs: []
   healingValue: 20

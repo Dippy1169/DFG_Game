@@ -51,6 +51,11 @@ public class DisplayInventory : MonoBehaviour
         foreach (KeyValuePair<GameObject, InventorySlot> _slot in itemsDisplayed)
         {
             Debug.Log("Slot: " + _slot);
+            Debug.Log("Item: " + _slot.Value.item);
+            Debug.Log("Item Name: " + _slot.Value.item.Name);
+            Debug.Log("Item Name: " + _slot.Value.item.Id);
+            Debug.Log("Inventory: " + inventory);
+            Debug.Log("Inventory DB: " + inventory.database);
             Debug.Log("inv dat getitem " + inventory.database.GetItem[_slot.Value.item.Id]);
             if (_slot.Value.ID >= 0)
             {
