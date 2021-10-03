@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d2ab761cde65a34680db7e6a4f93292, type: 3}
   m_Name: Bones
   m_EditorClassIdentifier: 
-  Id: 67
-  uiDisplay: {fileID: 21300000, guid: b8de79b9274f7a74398c2aaaf7189321, type: 3}
-  type: 0
+  Id: 3456
+  uiDisplay: {fileID: 21300000, guid: 5fa0a450a8bc7b14cb98c1652def88cc, type: 3}
+  type: 5
   description: 
   buffs: []

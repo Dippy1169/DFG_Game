@@ -16,7 +16,8 @@ public class GroundItem : MonoBehaviour, ISerializationCallbackReceiver
         //Debug.Log(item);
         //Debug.Log(item.uiDisplay);
         //Debug.Log(GetComponentInChildren<SpriteRenderer>());
-      
+
+        // Error here means your likely mising the sprite renderer on the object
         GetComponentInChildren<SpriteRenderer>().sprite = item.uiDisplay;
         //Debug.Log("sprite rendereer");
         //Debug.Log(GetComponentInChildren<SpriteRenderer>());
