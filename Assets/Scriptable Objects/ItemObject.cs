@@ -17,7 +17,8 @@ public enum Attributes
     Agility,
     Intellect,
     Stamina,
-    Strength
+    Strength,
+    Damage
 }
 public abstract class ItemObject : ScriptableObject
 {
