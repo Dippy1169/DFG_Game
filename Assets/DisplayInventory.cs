@@ -53,14 +53,21 @@ public class DisplayInventory : MonoBehaviour
             //Debug.Log("Slot: " + _slot);
             //Debug.Log("Item: " + _slot.Value.item);
             Debug.Log("Pickup Item Name: " + _slot.Value.item.Name);
+            if (_slot.Value.item.Name == null)
+            {
+                Debug.LogError("No database setup, check player inventory database to ensure item exists");
+            }
             Debug.Log("Item Name: " + _slot.Value.item.Id);
             Debug.Log("Inventory: " + inventory);
             Debug.Log("Inventory DB: " + inventory.database);
             Debug.Log("inv dat getitem " + inventory.database.GetItem[_slot.Value.item.Id]);
+            //P5 15mins
             if (_slot.Value.ID >= 0)
             {
                 _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().sprite = inventory.database.GetItem[_slot.Value.item.Id].uiDisplay;
+                // Turns the alpha back to 1 for when theres an item
                 _slot.Key.transform.GetChild(0).GetComponentInChildren<Image>().color = new Color(1, 1, 1, 1);
+                // Show howmany of the item. if slot amount = 1 text is "" otherwise set it to its number as a string
                 _slot.Key.GetComponentInChildren<TextMeshProUGUI>().text = _slot.Value.amount == 1 ? "" : _slot.Value.amount.ToString("n0");
             }
             else

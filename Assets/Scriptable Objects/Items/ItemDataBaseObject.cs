@@ -12,11 +12,12 @@ public class ItemDatabaseObject : ScriptableObject, ISerializationCallbackReceiv
     {
         for (int i = 0; i < Items.Length; i++)
         {
-            //Debug.Log(" Item Item IDBO: " + Items);
+            Debug.Log(" Item Item IDBO: " + Items);
             Items[i].Id = i;
-            //Debug.Log("IDBO Trig");
+            Debug.Log("Items ID = (this would be i) = " + i);
+            Debug.Log("IDBO Trig");
             GetItem.Add(i, Items[i]);
-            //Debug.Log("IDBO Trig 2");
+            Debug.Log("IDBO Trig 2");
         }
     }
 
