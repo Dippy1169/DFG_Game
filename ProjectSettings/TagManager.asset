@@ -13,6 +13,7 @@ TagManager:
   - EnemySpawner
   - Item
   - WeaponManager
+  - golfBall
   layers:
   - Default
   - TransparentFX
